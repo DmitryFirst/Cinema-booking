@@ -1,18 +1,30 @@
+*{
+    box-sizing: border-box;
+}
+
 body{
     background-color: #621402;
     font-family: "Roboto", sans-serif;
+    color: white;
 }
+
 
 .container{
     max-width: 1170px;
     margin: auto;
 }
+
 .header{
+    min-height: 100vh;
+    background:  linear-gradient(180deg, rgba(98, 20, 2, 0.31) 0%, #621402 85.62%),
+    url("../img/bg-image.png") no-repeat center top / cover;
+}
+
+.navbar{
     display: flex;
     align-items: center;
     padding-top: 30px;
     padding-bottom: 30px;
-
 }
 
 .menu{
@@ -21,21 +33,149 @@ body{
     margin: 0;
     margin-left: 17px;
 }
+
 .menu-item{
     margin-right: 25px;
 }
+
 .menu-link{
-    color: white;
+    
     text-decoration: none;
 }
+
 .user{
     margin-left: auto;
-    color: white;
     display: flex;
     align-items: center;
 }
+
 .avatar{
     width: 33px;
     height: 33px;
     border-radius: 50%;
+}
+.film{
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+}
+.film-title-small{
+    opacity: 50%;
+    font-size: 24px;
+    line-height: 150%;
+}
+
+.film-title{
+    font-size: 36px;
+    line-height: 42px;
+    margin-top: 11px;
+    margin-bottom: 23px;
+}
+
+.film-description{
+    font-size: 16px;
+    line-height: 150%;
+    max-width: 560px;
+}
+.film-trailer{
+margin: auto;
+}
+
+.film-details{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.time{
+    display: flex;
+    align-items: center;
+}
+
+.time-icon{
+    margin-right: 14px;
+}
+
+.rating{
+    display: flex;
+    align-items: center;
+    margin-left: 34px;
+}
+
+.rating-icon{
+    margin-right: 14px;
+}
+
+.rating-current{
+    font-size: 24px;
+    line-height: 150%;
+}
+.section{
+    margin-top: 62px;
+    padding-top: 46px;
+    padding-bottom: 63px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.section-label{
+    display: block;
+    margin-bottom: 20px;
+}
+.section-date-block{
+    display: flex;
+    
+}
+
+.section-date-item{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    width: 90px;
+    height: 90px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    margin-right: 15px;
+   text-align: center;
+   justify-content: center;
+   transition: background-color 0.2s;
+}
+
+.section-date-item:hover{
+background-color: #FE8E05;
+color: #621402;
+}
+.section-month{
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.section-day{
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 35px;
+}
+
+.section-week{
+    font-size: 19px;
+    line-height: 22px;
+}
+.select{
+   
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    color: white;
+    padding: 18px;
+    margin-top: 15px;
+
+}
+.select-cinema{
+    min-width: 470px;
+}
+.option{
+    color: black;
 }
